@@ -1,5 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="mcda" nsURI="ecore://nasdanika.org/models/mcda" nsPrefix="org.nasdanika.models.mcda">
-  <eClassifiers xsi:type="ecore:EClass" name="Criterion"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Evaluation" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedElement">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Model root containing criteria (hierarchy), alternatives, and experts"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="criteria" upperBound="-1"
+        eType="#//Criterion" containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Root evaluation criteria"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="alternatives" upperBound="-1"
+        eType="#//Alternative" containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Alternatives to choose from"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="experts" upperBound="-1"
+        eType="#//Expert" containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Experts provide judgments by comparing criteria and alternatives (comparables)"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="expertJudgments" upperBound="-1"
+        eType="#//Judgment" containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Judgments to assign weight to experts to be used in criteria and alternative judgments. If empty, all experts get the same weight."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="criteriaJudgments" upperBound="-1"
+        eType="#//Judgment" containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Judgments to compute weights of the root criteria"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Comparable" abstract="true" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedElement">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Something that can be compared - criteria for importance, alternatives for meeting criteria, experts for weight in the evaluation or a particular criterion in the evaluation"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="receivedJudgments" upperBound="-1"
+        eType="#//Judgment" eOpposite="#//Judgment/targets">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Judgments in which this comparable is a target"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Criterion" eSuperTypes="#//Comparable">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="A criterion for choosing one of alternatives. Criteria may form a hierarchy."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subCriteria" upperBound="-1"
+        eType="#//Criterion" containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Child criteria of this criterion"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="expertJudgments" upperBound="-1"
+        eType="#//Judgment" containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Judgments to assign weight to experts to be used in criteria and alternative judgments. If empty, expert weights are inherited from the container or set to all equal depending on inheritExpertWeights value."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="inheritExpertWeights" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+        defaultValueLiteral="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="If true, expert weights computed from judgments are multiplied by expert weights inherited from the container. If false, expert weights in the container are not taken into account."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subCriteriaJudgments" upperBound="-1"
+        eType="#//Judgment" containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Judgments to compute weights of sub-criteria"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="alternativeJudgments" upperBound="-1"
+        eType="#//Judgment" containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Judgments to compute weights of alternatives"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="alternativeFormula" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="SpEL (Spring Expression Language) expression used to compute alternative weight, e.g. from properties. "/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Expert" eSuperTypes="#//Comparable">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Experts provide judgments which are used to compute criteria and alternative weights. Experts themselves may be assigned weights using judgments."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="providedJudgments" upperBound="-1"
+        eType="#//Judgment" eOpposite="#//Judgment/expert">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Judgments provided by this expert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExpertGroup" eSuperTypes="#//Expert">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Group is a composite expert. E.g. &quot;Security&quot;, &quot;Business&quot;. Groups can be used to transitively assign expert weights to criteria. E.g. &quot;Security&quot; group may have little or no weight in &quot;Business Functionality&quot; criteria."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="members" upperBound="-1"
+        eType="#//Expert" containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Group members, may include other groups so experts may form a hierarchy."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="expertJudgments" upperBound="-1"
+        eType="#//Judgment" containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Judgments to assign weight to experts in this group. If empty, all experts get the same weight. "/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Alternative" eSuperTypes="#//Comparable">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Evaluation computes alternative weights using expert judgments of how wll an alternative addresses leaf criteria"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="properties" upperBound="-1"
+        eType="ecore:EClass ../../org.nasdanika.ncore/model/ncore.ecore#//Property"
+        containment="true" eKeys="../../org.nasdanika.ncore/model/ncore.ecore#//Property/name">
+      <eAnnotations source="urn:org.nasdanika">
+        <details key="reference-type" value="map: MapProperty&#xA;list: ListProperty&#xA;string: StringProperty&#xA;integer: IntegerProperty"/>
+        <details key="value-feature" value="value"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Alternative properties. E.g. cost, safety rating, ... Properties can be used to assist in expert judgements and also to visualize &quot;alternative space&quot;. E.g. cost might be a property which does not taken into account in judgments, rather it is used to build cost/benefit chart."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Judgment" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//ModelElement ../../org.nasdanika.ncore/model/ncore.ecore#//Documented">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Expert judgment regarding target(s) expressed as a double value. If there is one target, then value is a weight of the target. If there are two targets, then value reflects preference of the first value over the second. E.g. 1 would mean that targets are equal, 2 that the first is twice &quot;better&quot; than the second, and 0.5 would mean that the second is twice &quot;better&quot; than the first."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="expert" lowerBound="1"
+        eType="#//Expert" eOpposite="#//Expert/providedJudgments">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Expert who cast the judgment"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targets" lowerBound="1"
+        upperBound="2" eType="#//Comparable" eOpposite="#//Comparable/receivedJudgments">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Judgment targets - one for weights and two for pair-wise comparisons"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"
+        defaultValueLiteral="1.0">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Judgment value. If there is one target, then value is a weight of the target. If there are two targets, then value reflects preference of the first value over the second. E.g. 1 would mean that targets are equal, 2 that the first is twice &quot;better&quot; than the second, and 0.5 would mean that the second is twice &quot;better&quot; than the first."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
 </ecore:EPackage>

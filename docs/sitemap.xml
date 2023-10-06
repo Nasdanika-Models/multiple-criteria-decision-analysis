@@ -1,83 +1,463 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" >
   <url>
-    <loc>https://mcd.models.nasdanika.org/circular-layout-graph-with-dependencies-and-subpackages.html</loc>
-    <lastmod>2023-09-23T23:43:48.963-04:00</lastmod>
+    <loc>https://mcda.models.nasdanika.org/circular-layout-graph-with-dependencies-and-subpackages.html</loc>
+    <lastmod>2023-10-06T08:23:04.399-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://mcd.models.nasdanika.org/circular-layout-graph.html</loc>
-    <lastmod>2023-09-23T23:43:48.953-04:00</lastmod>
+    <loc>https://mcda.models.nasdanika.org/circular-layout-graph.html</loc>
+    <lastmod>2023-10-06T08:23:04.390-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://mcd.models.nasdanika.org/classifiers.html</loc>
-    <lastmod>2023-09-23T23:43:48.947-04:00</lastmod>
+    <loc>https://mcda.models.nasdanika.org/classifiers.html</loc>
+    <lastmod>2023-10-06T08:23:04.379-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://mcd.models.nasdanika.org/default-graph-with-dependencies-and-subpackages.html</loc>
-    <lastmod>2023-09-23T23:43:48.960-04:00</lastmod>
+    <loc>https://mcda.models.nasdanika.org/default-graph-with-dependencies-and-subpackages.html</loc>
+    <lastmod>2023-10-06T08:23:04.396-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://mcd.models.nasdanika.org/default-graph.html</loc>
-    <lastmod>2023-09-23T23:43:48.952-04:00</lastmod>
+    <loc>https://mcda.models.nasdanika.org/default-graph.html</loc>
+    <lastmod>2023-10-06T08:23:04.388-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://mcd.models.nasdanika.org/diagram.html</loc>
-    <lastmod>2023-09-23T23:43:48.949-04:00</lastmod>
+    <loc>https://mcda.models.nasdanika.org/diagram.html</loc>
+    <lastmod>2023-10-06T08:23:04.386-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://mcd.models.nasdanika.org/force-layout-graph-with-dependencies-and-subpackages.html</loc>
-    <lastmod>2023-09-23T23:43:48.965-04:00</lastmod>
+    <loc>https://mcda.models.nasdanika.org/force-layout-graph-with-dependencies-and-subpackages.html</loc>
+    <lastmod>2023-10-06T08:23:04.403-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://mcd.models.nasdanika.org/force-layout-graph.html</loc>
-    <lastmod>2023-09-23T23:43:48.956-04:00</lastmod>
+    <loc>https://mcda.models.nasdanika.org/force-layout-graph.html</loc>
+    <lastmod>2023-10-06T08:23:04.393-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://mcd.models.nasdanika.org/glossary.html</loc>
-    <lastmod>2023-09-23T23:43:48.972-04:00</lastmod>
+    <loc>https://mcda.models.nasdanika.org/glossary.html</loc>
+    <lastmod>2023-10-06T08:23:04.412-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://mcd.models.nasdanika.org/index.html</loc>
-    <lastmod>2023-09-23T23:43:48.927-04:00</lastmod>
+    <loc>https://mcda.models.nasdanika.org/index.html</loc>
+    <lastmod>2023-10-06T08:23:04.105-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://mcd.models.nasdanika.org/references/eClassifiers/Criterion/circular-layout-graph.html</loc>
-    <lastmod>2023-09-23T23:43:48.941-04:00</lastmod>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Alternative/attributes.html</loc>
+    <lastmod>2023-10-06T08:23:04.110-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://mcd.models.nasdanika.org/references/eClassifiers/Criterion/default-graph.html</loc>
-    <lastmod>2023-09-23T23:43:48.938-04:00</lastmod>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Alternative/circular-layout-graph.html</loc>
+    <lastmod>2023-10-06T08:23:04.127-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://mcd.models.nasdanika.org/references/eClassifiers/Criterion/diagram.html</loc>
-    <lastmod>2023-09-23T23:43:48.934-04:00</lastmod>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Alternative/default-graph.html</loc>
+    <lastmod>2023-10-06T08:23:04.125-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://mcd.models.nasdanika.org/references/eClassifiers/Criterion/force-layout-graph.html</loc>
-    <lastmod>2023-09-23T23:43:48.945-04:00</lastmod>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Alternative/diagram.html</loc>
+    <lastmod>2023-10-06T08:23:04.123-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://mcd.models.nasdanika.org/references/eClassifiers/Criterion/index.html</loc>
-    <lastmod>2023-09-23T23:43:48.932-04:00</lastmod>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Alternative/force-layout-graph.html</loc>
+    <lastmod>2023-10-06T08:23:04.128-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://mcd.models.nasdanika.org/search.html</loc>
-    <lastmod>2023-09-23T23:43:48.970-04:00</lastmod>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Alternative/index.html</loc>
+    <lastmod>2023-10-06T08:23:04.109-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Alternative/inheritance.html</loc>
+    <lastmod>2023-10-06T08:23:04.113-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Alternative/load-specification.html</loc>
+    <lastmod>2023-10-06T08:23:04.131-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Alternative/references/eStructuralFeatures/properties/index.html</loc>
+    <lastmod>2023-10-06T08:23:04.121-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Alternative/references.html</loc>
+    <lastmod>2023-10-06T08:23:04.116-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Comparable/attributes.html</loc>
+    <lastmod>2023-10-06T08:23:04.137-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Comparable/circular-layout-graph.html</loc>
+    <lastmod>2023-10-06T08:23:04.154-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Comparable/default-graph.html</loc>
+    <lastmod>2023-10-06T08:23:04.152-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Comparable/diagram.html</loc>
+    <lastmod>2023-10-06T08:23:04.148-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Comparable/force-layout-graph.html</loc>
+    <lastmod>2023-10-06T08:23:04.156-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Comparable/index.html</loc>
+    <lastmod>2023-10-06T08:23:04.134-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Comparable/inheritance.html</loc>
+    <lastmod>2023-10-06T08:23:04.139-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Comparable/references/eStructuralFeatures/receivedJudgments/index.html</loc>
+    <lastmod>2023-10-06T08:23:04.145-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Comparable/references.html</loc>
+    <lastmod>2023-10-06T08:23:04.141-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Criterion/attributes.html</loc>
+    <lastmod>2023-10-06T08:23:04.160-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Criterion/circular-layout-graph.html</loc>
+    <lastmod>2023-10-06T08:23:04.193-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Criterion/default-graph.html</loc>
+    <lastmod>2023-10-06T08:23:04.190-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Criterion/diagram.html</loc>
+    <lastmod>2023-10-06T08:23:04.187-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Criterion/force-layout-graph.html</loc>
+    <lastmod>2023-10-06T08:23:04.195-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Criterion/index.html</loc>
+    <lastmod>2023-10-06T08:23:04.158-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Criterion/inheritance.html</loc>
+    <lastmod>2023-10-06T08:23:04.179-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Criterion/load-specification.html</loc>
+    <lastmod>2023-10-06T08:23:04.198-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Criterion/references/eStructuralFeatures/alternativeFormula/index.html</loc>
+    <lastmod>2023-10-06T08:23:04.164-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Criterion/references/eStructuralFeatures/alternativeJudgments/index.html</loc>
+    <lastmod>2023-10-06T08:23:04.170-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Criterion/references/eStructuralFeatures/expertJudgments/index.html</loc>
+    <lastmod>2023-10-06T08:23:04.175-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Criterion/references/eStructuralFeatures/inheritExpertWeights/index.html</loc>
+    <lastmod>2023-10-06T08:23:04.167-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Criterion/references/eStructuralFeatures/subCriteria/index.html</loc>
+    <lastmod>2023-10-06T08:23:04.172-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Criterion/references/eStructuralFeatures/subCriteriaJudgments/index.html</loc>
+    <lastmod>2023-10-06T08:23:04.177-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Criterion/references.html</loc>
+    <lastmod>2023-10-06T08:23:04.182-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Evaluation/attributes.html</loc>
+    <lastmod>2023-10-06T08:23:04.206-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Evaluation/circular-layout-graph.html</loc>
+    <lastmod>2023-10-06T08:23:04.255-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Evaluation/default-graph.html</loc>
+    <lastmod>2023-10-06T08:23:04.251-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Evaluation/diagram.html</loc>
+    <lastmod>2023-10-06T08:23:04.247-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Evaluation/force-layout-graph.html</loc>
+    <lastmod>2023-10-06T08:23:04.258-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Evaluation/index.html</loc>
+    <lastmod>2023-10-06T08:23:04.203-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Evaluation/inheritance.html</loc>
+    <lastmod>2023-10-06T08:23:04.209-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Evaluation/load-specification.html</loc>
+    <lastmod>2023-10-06T08:23:04.261-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Evaluation/references/eStructuralFeatures/alternatives/index.html</loc>
+    <lastmod>2023-10-06T08:23:04.219-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Evaluation/references/eStructuralFeatures/criteria/index.html</loc>
+    <lastmod>2023-10-06T08:23:04.221-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Evaluation/references/eStructuralFeatures/criteriaJudgments/index.html</loc>
+    <lastmod>2023-10-06T08:23:04.223-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Evaluation/references/eStructuralFeatures/expertJudgments/index.html</loc>
+    <lastmod>2023-10-06T08:23:04.239-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Evaluation/references/eStructuralFeatures/experts/index.html</loc>
+    <lastmod>2023-10-06T08:23:04.217-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Evaluation/references.html</loc>
+    <lastmod>2023-10-06T08:23:04.211-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Expert/attributes.html</loc>
+    <lastmod>2023-10-06T08:23:04.269-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Expert/circular-layout-graph.html</loc>
+    <lastmod>2023-10-06T08:23:04.288-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Expert/default-graph.html</loc>
+    <lastmod>2023-10-06T08:23:04.283-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Expert/diagram.html</loc>
+    <lastmod>2023-10-06T08:23:04.281-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Expert/force-layout-graph.html</loc>
+    <lastmod>2023-10-06T08:23:04.291-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Expert/index.html</loc>
+    <lastmod>2023-10-06T08:23:04.265-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Expert/inheritance.html</loc>
+    <lastmod>2023-10-06T08:23:04.271-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Expert/load-specification.html</loc>
+    <lastmod>2023-10-06T08:23:04.295-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Expert/references/eStructuralFeatures/providedJudgments/index.html</loc>
+    <lastmod>2023-10-06T08:23:04.278-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Expert/references.html</loc>
+    <lastmod>2023-10-06T08:23:04.274-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/ExpertGroup/attributes.html</loc>
+    <lastmod>2023-10-06T08:23:04.302-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/ExpertGroup/circular-layout-graph.html</loc>
+    <lastmod>2023-10-06T08:23:04.329-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/ExpertGroup/default-graph.html</loc>
+    <lastmod>2023-10-06T08:23:04.326-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/ExpertGroup/diagram.html</loc>
+    <lastmod>2023-10-06T08:23:04.322-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/ExpertGroup/force-layout-graph.html</loc>
+    <lastmod>2023-10-06T08:23:04.334-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/ExpertGroup/index.html</loc>
+    <lastmod>2023-10-06T08:23:04.298-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/ExpertGroup/inheritance.html</loc>
+    <lastmod>2023-10-06T08:23:04.306-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/ExpertGroup/load-specification.html</loc>
+    <lastmod>2023-10-06T08:23:04.338-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/ExpertGroup/references/eStructuralFeatures/expertJudgments/index.html</loc>
+    <lastmod>2023-10-06T08:23:04.318-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/ExpertGroup/references/eStructuralFeatures/members/index.html</loc>
+    <lastmod>2023-10-06T08:23:04.314-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/ExpertGroup/references.html</loc>
+    <lastmod>2023-10-06T08:23:04.309-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Judgment/attributes.html</loc>
+    <lastmod>2023-10-06T08:23:04.344-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Judgment/circular-layout-graph.html</loc>
+    <lastmod>2023-10-06T08:23:04.373-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Judgment/default-graph.html</loc>
+    <lastmod>2023-10-06T08:23:04.370-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Judgment/diagram.html</loc>
+    <lastmod>2023-10-06T08:23:04.366-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Judgment/force-layout-graph.html</loc>
+    <lastmod>2023-10-06T08:23:04.375-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Judgment/index.html</loc>
+    <lastmod>2023-10-06T08:23:04.342-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Judgment/inheritance.html</loc>
+    <lastmod>2023-10-06T08:23:04.356-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Judgment/load-specification.html</loc>
+    <lastmod>2023-10-06T08:23:04.377-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Judgment/references/eStructuralFeatures/expert/index.html</loc>
+    <lastmod>2023-10-06T08:23:04.355-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Judgment/references/eStructuralFeatures/targets/index.html</loc>
+    <lastmod>2023-10-06T08:23:04.353-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Judgment/references/eStructuralFeatures/value/index.html</loc>
+    <lastmod>2023-10-06T08:23:04.350-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/references/eClassifiers/Judgment/references.html</loc>
+    <lastmod>2023-10-06T08:23:04.359-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mcda.models.nasdanika.org/search.html</loc>
+    <lastmod>2023-10-06T08:23:04.407-04:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>

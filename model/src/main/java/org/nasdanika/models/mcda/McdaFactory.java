@@ -22,6 +22,15 @@ public interface McdaFactory extends EFactory {
 	McdaFactory eINSTANCE = org.nasdanika.models.mcda.impl.McdaFactoryImpl.init();
 
 	/**
+	 * Returns a new object of class '<em>Evaluation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Evaluation</em>'.
+	 * @generated
+	 */
+	Evaluation createEvaluation();
+
+	/**
 	 * Returns a new object of class '<em>Criterion</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -29,6 +38,42 @@ public interface McdaFactory extends EFactory {
 	 * @generated
 	 */
 	Criterion createCriterion();
+
+	/**
+	 * Returns a new object of class '<em>Expert</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Expert</em>'.
+	 * @generated
+	 */
+	Expert createExpert();
+
+	/**
+	 * Returns a new object of class '<em>Expert Group</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Expert Group</em>'.
+	 * @generated
+	 */
+	ExpertGroup createExpertGroup();
+
+	/**
+	 * Returns a new object of class '<em>Alternative</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Alternative</em>'.
+	 * @generated
+	 */
+	Alternative createAlternative();
+
+	/**
+	 * Returns a new object of class '<em>Judgment</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Judgment</em>'.
+	 * @generated
+	 */
+	Judgment createJudgment();
 
 	/**
 	 * Returns the package supported by this factory.

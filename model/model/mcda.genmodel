@@ -1,13 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
-    modelDirectory="/org.nasdanika.models.mcda/src/main/java" creationIcons="false"
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.nasdanika.models.mcda/src/main/java" creationIcons="false"
     editorDirectory="" modelPluginID="org.nasdanika.models.mcda" modelName="Mcda"
     rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
     featureDelegation="Dynamic" complianceLevel="17.0" suppressGenModelAnnotations="false"
-    copyrightFields="false" operationReflection="true" importOrganizing="true">
+    copyrightFields="false" usedGenPackages="../../org.nasdanika.ncore/model/ncore.genmodel#//ncore"
+    operationReflection="true" importOrganizing="true">
   <foreignModel>mcda.ecore</foreignModel>
   <genPackages prefix="Mcda" basePackage="org.nasdanika.models" disposableProviderFactory="true"
       ecorePackage="mcda.ecore#/">
-    <genClasses ecoreClass="mcda.ecore#//Criterion"/>
+    <genClasses ecoreClass="mcda.ecore#//Evaluation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mcda.ecore#//Evaluation/criteria"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mcda.ecore#//Evaluation/alternatives"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mcda.ecore#//Evaluation/experts"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mcda.ecore#//Evaluation/expertJudgments"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mcda.ecore#//Evaluation/criteriaJudgments"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="mcda.ecore#//Comparable">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mcda.ecore#//Comparable/receivedJudgments"/>
+    </genClasses>
+    <genClasses ecoreClass="mcda.ecore#//Criterion">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mcda.ecore#//Criterion/subCriteria"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mcda.ecore#//Criterion/expertJudgments"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mcda.ecore#//Criterion/inheritExpertWeights"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mcda.ecore#//Criterion/subCriteriaJudgments"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mcda.ecore#//Criterion/alternativeJudgments"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mcda.ecore#//Criterion/alternativeFormula"/>
+    </genClasses>
+    <genClasses ecoreClass="mcda.ecore#//Expert">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mcda.ecore#//Expert/providedJudgments"/>
+    </genClasses>
+    <genClasses ecoreClass="mcda.ecore#//ExpertGroup">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mcda.ecore#//ExpertGroup/members"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mcda.ecore#//ExpertGroup/expertJudgments"/>
+    </genClasses>
+    <genClasses ecoreClass="mcda.ecore#//Alternative">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mcda.ecore#//Alternative/properties"/>
+    </genClasses>
+    <genClasses ecoreClass="mcda.ecore#//Judgment">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mcda.ecore#//Judgment/expert"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mcda.ecore#//Judgment/targets"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mcda.ecore#//Judgment/value"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

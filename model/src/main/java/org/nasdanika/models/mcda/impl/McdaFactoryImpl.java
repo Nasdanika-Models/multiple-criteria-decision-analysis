@@ -10,6 +10,14 @@ import org.eclipse.emf.ecore.impl.EFactoryImpl;
 
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 
+import org.nasdanika.models.mcda.Alternative;
+import org.nasdanika.models.mcda.Criterion;
+import org.nasdanika.models.mcda.Evaluation;
+import org.nasdanika.models.mcda.Expert;
+import org.nasdanika.models.mcda.ExpertGroup;
+import org.nasdanika.models.mcda.Judgment;
+import org.nasdanika.models.mcda.McdaFactory;
+import org.nasdanika.models.mcda.McdaPackage;
 import org.nasdanika.models.mcda.*;
 
 /**
@@ -56,7 +64,12 @@ public class McdaFactoryImpl extends EFactoryImpl implements McdaFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
+			case McdaPackage.EVALUATION: return createEvaluation();
 			case McdaPackage.CRITERION: return createCriterion();
+			case McdaPackage.EXPERT: return createExpert();
+			case McdaPackage.EXPERT_GROUP: return createExpertGroup();
+			case McdaPackage.ALTERNATIVE: return createAlternative();
+			case McdaPackage.JUDGMENT: return createJudgment();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -68,9 +81,64 @@ public class McdaFactoryImpl extends EFactoryImpl implements McdaFactory {
 	 * @generated
 	 */
 	@Override
+	public Evaluation createEvaluation() {
+		EvaluationImpl evaluation = new EvaluationImpl();
+		return evaluation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Criterion createCriterion() {
 		CriterionImpl criterion = new CriterionImpl();
 		return criterion;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Expert createExpert() {
+		ExpertImpl expert = new ExpertImpl();
+		return expert;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ExpertGroup createExpertGroup() {
+		ExpertGroupImpl expertGroup = new ExpertGroupImpl();
+		return expertGroup;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Alternative createAlternative() {
+		AlternativeImpl alternative = new AlternativeImpl();
+		return alternative;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Judgment createJudgment() {
+		JudgmentImpl judgment = new JudgmentImpl();
+		return judgment;
 	}
 
 	/**
