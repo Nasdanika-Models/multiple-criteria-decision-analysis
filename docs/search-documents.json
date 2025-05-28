@@ -1,226 +1,226 @@
 {
   "references/eClassifiers/Comparable/index.html": {
-    "link-uuid": "3dd0a40a-bb7e-49fd-ab3b-688373169994",
+    "link-uuid": "82db27f5-d4ce-4284-a1d3-5154f96bc12a",
     "title": "Comparable",
     "content": "Something that can be compared - criteria for importance, alternatives for meeting criteria, experts for weight in the evaluation or a particular criterion in the evaluation",
-    "timestamp": 1747602574365
+    "timestamp": 1747881617174
   },
   "references/eClassifiers/Criterion/references/eStructuralFeatures/subCriteria/index.html": {
     "path": "Criterion/References/subCriteria",
-    "link-uuid": "568f99f7-333c-4cab-bdf7-15917651ed3e",
+    "link-uuid": "a1ecda18-624f-48d3-89f5-be528c552c9f",
     "title": "subCriteria",
     "content": "Type Criterion Multiplicity 0..* Child criteria of this criterion",
-    "timestamp": 1747602574390
+    "timestamp": 1747881617199
   },
   "references/eClassifiers/Alternative/inheritance.html": {
     "path": "Alternative/Inheritance",
-    "link-uuid": "cc4481ae-f283-41f5-85d6-517d25891736",
+    "link-uuid": "f8b8b03c-a489-49d0-8f58-de251d61c594",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1747602574350
+    "timestamp": 1747881617159
   },
   "references/eClassifiers/Evaluation/references/eStructuralFeatures/alternatives/index.html": {
     "path": "Evaluation/References/alternatives",
-    "link-uuid": "6962d91c-8946-444a-8de6-c6a9409dd15b",
+    "link-uuid": "7e98ada9-b0a2-4b63-a42a-014f997a98f8",
     "title": "alternatives",
     "content": "Type Alternative Multiplicity 0..* Alternatives to choose from",
-    "timestamp": 1747602574408
+    "timestamp": 1747881617218
   },
   "references/eClassifiers/Evaluation/index.html": {
-    "link-uuid": "8027a4cf-ee3d-4916-83e5-c713af787e6a",
+    "link-uuid": "dd611593-076e-4061-8012-d1677fccc086",
     "title": "Evaluation",
     "content": "Model root containing criteria (hierarchy), alternatives, and experts",
-    "timestamp": 1747602574404
+    "timestamp": 1747881617214
   },
   "references/eClassifiers/Comparable/inheritance.html": {
     "path": "Comparable/Inheritance",
-    "link-uuid": "eae00df6-024b-425f-96b1-29d702548521",
+    "link-uuid": "c58d3308-3796-4954-9cf9-87361e43f038",
     "title": "Inheritance",
     "content": "Supertypes Subtypes  ",
-    "timestamp": 1747602574366
+    "timestamp": 1747881617176
   },
   "references/eClassifiers/Judgment/index.html": {
-    "link-uuid": "72fa3d6b-d37a-42f9-8a65-cdacd968badc",
+    "link-uuid": "b4ddcf54-efc5-411d-8900-84b53b6998dc",
     "title": "Judgment",
     "content": "Expert judgment regarding target(s) expressed as a double value. If there is one target, then value is a weight of the target. If there are two targets, then value reflects preference of the first value over the second. E.g. 1 would mean that targets are equal, 2 that the first is twice &ldquo;better&rdquo; than the second, and 0.5 would mean that the second is twice &ldquo;better&rdquo; than the first.",
-    "timestamp": 1747602574461
+    "timestamp": 1747881617270
   },
   "references/eClassifiers/Evaluation/inheritance.html": {
     "path": "Evaluation/Inheritance",
-    "link-uuid": "218c6405-41c6-4ff6-b792-a04a3869a1a7",
+    "link-uuid": "f205e78b-c0a1-4d60-9016-d3affec53a05",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1747602574405
+    "timestamp": 1747881617215
   },
   "references/eClassifiers/Judgment/references/eStructuralFeatures/expert/index.html": {
     "path": "Judgment/References/expert",
-    "link-uuid": "69205c70-a76b-4d61-b35c-e4171cafbc08",
+    "link-uuid": "160edd0f-d537-4b4a-b6cf-688b069c18ea",
     "title": "expert",
     "content": "Type Expert Multiplicity 1 Expert who cast the judgment",
-    "timestamp": 1747602574465
+    "timestamp": 1747881617274
   },
   "references/eClassifiers/Alternative/index.html": {
-    "link-uuid": "6d31be56-2116-478a-8a3a-abd583fa2af2",
+    "link-uuid": "d4aaf8e8-f83b-4202-a477-de1d6b3e0ed2",
     "title": "Alternative",
     "content": "Evaluation computes alternative weights using expert judgments of how wll an alternative addresses leaf criteria",
-    "timestamp": 1747602574348
+    "timestamp": 1747881617158
   },
   "references/eClassifiers/Evaluation/references/eStructuralFeatures/experts/index.html": {
     "path": "Evaluation/References/experts",
-    "link-uuid": "90691cc1-3705-4f55-855f-0ffc5b83a76e",
+    "link-uuid": "8246b1ce-6536-4f39-b5a2-f04c9f2b945e",
     "title": "experts",
     "content": "Type Expert Multiplicity 0..* Experts provide judgments by comparing criteria and alternatives (comparables)",
-    "timestamp": 1747602574413
+    "timestamp": 1747881617223
   },
   "references/eClassifiers/Evaluation/references/eStructuralFeatures/criteriaJudgments/index.html": {
     "path": "Evaluation/References/criteriaJudgments",
-    "link-uuid": "8457974d-6580-4e1d-a16f-79fd47bc7d7b",
+    "link-uuid": "88be0765-c3d0-4634-b5f7-f167f12fbca4",
     "title": "criteriaJudgments",
     "content": "Type Judgment Multiplicity 0..* Judgments to compute weights of the root criteria",
-    "timestamp": 1747602574411
+    "timestamp": 1747881617221
   },
   "references/eClassifiers/Evaluation/references/eStructuralFeatures/criteria/index.html": {
     "path": "Evaluation/References/criteria",
-    "link-uuid": "b94202c4-6bd3-4e16-b16f-06b2ff1c7480",
+    "link-uuid": "3e7bd114-667a-4739-b634-6b2e0567dad5",
     "title": "criteria",
     "content": "Type Criterion Multiplicity 0..* Root evaluation criteria",
-    "timestamp": 1747602574409
+    "timestamp": 1747881617219
   },
   "references/eClassifiers/ExpertGroup/references/eStructuralFeatures/expertJudgments/index.html": {
     "path": "ExpertGroup/References/expertJudgments",
-    "link-uuid": "fcc8f1c9-ded4-4abf-bde3-8e27936386b1",
+    "link-uuid": "5c882dd8-3877-4d0d-ac17-e6de6c116fcd",
     "title": "expertJudgments",
     "content": "Type Judgment Multiplicity 0..* Judgments to assign weight to experts in this group. If empty, all experts get the same weight.",
-    "timestamp": 1747602574444
+    "timestamp": 1747881617252
   },
   "references/eClassifiers/Expert/index.html": {
-    "link-uuid": "5e9049c1-768b-43d2-b517-e6aea0774770",
+    "link-uuid": "b0f5a856-1f22-40c6-adc3-fc705e27a3f5",
     "title": "Expert",
     "content": "Experts provide judgments which are used to compute criteria and alternative weights. Experts themselves may be assigned weights using judgments.",
-    "timestamp": 1747602574424
+    "timestamp": 1747881617234
   },
   "references/eClassifiers/Expert/references/eStructuralFeatures/providedJudgments/index.html": {
     "path": "Expert/References/providedJudgments",
-    "link-uuid": "55fa17d1-df3a-4e55-96a5-7ecf9e5747c6",
+    "link-uuid": "1ab6d2b2-2a4c-40fc-8c21-fb1fc83b11e4",
     "title": "providedJudgments",
     "content": "Type Judgment Multiplicity 0..* Judgments provided by this expert",
-    "timestamp": 1747602574429
+    "timestamp": 1747881617239
   },
   "references/eClassifiers/Judgment/references/eStructuralFeatures/targets/index.html": {
     "path": "Judgment/References/targets",
-    "link-uuid": "35adb5e3-df41-47c9-b48e-c6927b13b691",
+    "link-uuid": "ceb3f2db-4374-46d2-bd7a-12e8120e712e",
     "title": "targets",
     "content": "Type Comparable Multiplicity 1..2 Judgment targets - one for weights and two for pair-wise comparisons",
-    "timestamp": 1747602574466
+    "timestamp": 1747881617275
   },
   "references/eClassifiers/Expert/inheritance.html": {
     "path": "Expert/Inheritance",
-    "link-uuid": "4e42c858-7d5b-488c-bec4-4a7d3a892281",
+    "link-uuid": "d6a3ca85-9809-4753-9a48-bd38d08e9806",
     "title": "Inheritance",
     "content": "Supertypes Subtypes  ",
-    "timestamp": 1747602574426
+    "timestamp": 1747881617236
   },
   "references/eClassifiers/Judgment/references/eStructuralFeatures/value/index.html": {
     "path": "Judgment/Attributes/value",
-    "link-uuid": "043e4455-c6ad-4d97-8ba0-2635e2db531b",
+    "link-uuid": "591cf7bf-2122-4e8f-9288-f22a7527732a",
     "title": "value",
     "content": "Type EDoubleObject Multiplicity 0..1 Judgment value. If there is one target, then value is a weight of the target. If there are two targets, then value reflects preference of the first value over the second. E.g. 1 would mean that targets are equal, 2 that the first is twice &ldquo;better&rdquo; than the second, and 0.5 would mean that the second is twice &ldquo;better&rdquo; than the first.",
-    "timestamp": 1747602574467
+    "timestamp": 1747881617276
   },
   "references/eClassifiers/Criterion/references/eStructuralFeatures/alternativeFormula/index.html": {
     "path": "Criterion/Attributes/alternativeFormula",
-    "link-uuid": "ec8dfdef-ab62-4962-9b30-e948c003ccfe",
+    "link-uuid": "e8970a31-fcad-4448-a9b4-7da17f1f4440",
     "title": "alternativeFormula",
     "content": "Type EString Multiplicity 0..1 SpEL (Spring Expression Language) expression used to compute alternative weight, e.g. from properties.",
-    "timestamp": 1747602574385
+    "timestamp": 1747881617194
   },
   "references/eClassifiers/ExpertGroup/references/eStructuralFeatures/members/index.html": {
     "path": "ExpertGroup/References/members",
-    "link-uuid": "b66acb0b-8207-47fe-909a-cd5f8b66f462",
+    "link-uuid": "fa35b36f-03c3-44cd-99d6-f8cd5a112624",
     "title": "members",
     "content": "Type Expert Multiplicity 0..* Group members, may include other groups so experts may form a hierarchy.",
-    "timestamp": 1747602574445
+    "timestamp": 1747881617253
   },
   "references/eClassifiers/Comparable/references/eStructuralFeatures/receivedJudgments/index.html": {
     "path": "Comparable/References/receivedJudgments",
-    "link-uuid": "f77ffa3d-cf80-48f7-928e-26c63aa525db",
+    "link-uuid": "afb36511-d532-4a27-a3a1-f3220fb9c854",
     "title": "receivedJudgments",
     "content": "Type Judgment Multiplicity 0..* Judgments in which this comparable is a target",
-    "timestamp": 1747602574367
+    "timestamp": 1747881617176
   },
   "references/eClassifiers/Evaluation/references/eStructuralFeatures/expertJudgments/index.html": {
     "path": "Evaluation/References/expertJudgments",
-    "link-uuid": "edc4b5aa-d570-4ce5-99b1-c3aa3b71cb6b",
+    "link-uuid": "f7de2f94-a4f5-466a-aa2c-e7f4ba053c9b",
     "title": "expertJudgments",
     "content": "Type Judgment Multiplicity 0..* Judgments to assign weight to experts to be used in criteria and alternative judgments. If empty, all experts get the same weight.",
-    "timestamp": 1747602574412
+    "timestamp": 1747881617222
   },
   "references/eClassifiers/Judgment/inheritance.html": {
     "path": "Judgment/Inheritance",
-    "link-uuid": "cb5de7e2-adec-4585-8533-7391fbcf9f79",
+    "link-uuid": "3bf7dbfe-29b9-43ca-b188-054457cc273a",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1747602574462
+    "timestamp": 1747881617271
   },
   "references/eClassifiers/Criterion/index.html": {
-    "link-uuid": "2c48c849-3301-415d-bec0-049de98f1fb5",
+    "link-uuid": "5ac81d0c-6ff9-4e14-926c-7242edb2e534",
     "title": "Criterion",
     "content": "A criterion for choosing one of alternatives. Criteria may form a hierarchy.",
-    "timestamp": 1747602574381
+    "timestamp": 1747881617190
   },
   "references/eClassifiers/ExpertGroup/index.html": {
-    "link-uuid": "4740784c-96f9-4b20-b239-b9a78b779aff",
+    "link-uuid": "06824625-263f-485d-a16a-4c61d9ee6181",
     "title": "ExpertGroup",
     "content": "Group is a composite expert. E.g. &ldquo;Security&rdquo;, &ldquo;Business&rdquo;. Groups can be used to transitively assign expert weights to criteria. E.g. &ldquo;Security&rdquo; group may have little or no weight in &ldquo;Business Functionality&rdquo; criteria.",
-    "timestamp": 1747602574440
+    "timestamp": 1747881617249
   },
   "references/eClassifiers/Criterion/references/eStructuralFeatures/expertJudgments/index.html": {
     "path": "Criterion/References/expertJudgments",
-    "link-uuid": "35ca6d8c-3e39-4dca-8d79-0333c8b7b298",
+    "link-uuid": "bda56feb-0a28-4bf7-bba6-18e0e8a31a3e",
     "title": "expertJudgments",
     "content": "Type Judgment Multiplicity 0..* Judgments to assign weight to experts to be used in criteria and alternative judgments. If empty, expert weights are inherited from the container or set to all equal depending on inheritExpertWeights value.",
-    "timestamp": 1747602574388
+    "timestamp": 1747881617197
   },
   "references/eClassifiers/Alternative/references/eStructuralFeatures/properties/index.html": {
     "path": "Alternative/References/properties",
-    "link-uuid": "565dde84-8c53-42c5-96e1-63eb243ff12d",
+    "link-uuid": "682f9ffc-3090-4fe2-922c-e06a6892b553",
     "title": "properties",
     "content": "Type Property Multiplicity 0..* Alternative properties. E.g. cost, safety rating, &hellip; Properties can be used to assist in expert judgements and also to visualize &ldquo;alternative space&rdquo;. E.g. cost might be a property which does not taken into account in judgments, rather it is used to build cost/benefit chart.",
-    "timestamp": 1747602574353
+    "timestamp": 1747881617163
   },
   "references/eClassifiers/Criterion/references/eStructuralFeatures/alternativeJudgments/index.html": {
     "path": "Criterion/References/alternativeJudgments",
-    "link-uuid": "6fddf96d-406c-4e18-9761-8dfb1c63313d",
+    "link-uuid": "f366dd35-c1d0-47ce-a586-3fb28bc7621e",
     "title": "alternativeJudgments",
     "content": "Type Judgment Multiplicity 0..* Judgments to compute weights of alternatives",
-    "timestamp": 1747602574387
+    "timestamp": 1747881617196
   },
   "references/eClassifiers/Criterion/references/eStructuralFeatures/subCriteriaJudgments/index.html": {
     "path": "Criterion/References/subCriteriaJudgments",
-    "link-uuid": "809fcc19-5a74-4013-8662-804666fde64f",
+    "link-uuid": "3796f515-1be8-4b84-87cb-6ea4f2e8f0da",
     "title": "subCriteriaJudgments",
     "content": "Type Judgment Multiplicity 0..* Judgments to compute weights of sub-criteria",
-    "timestamp": 1747602574392
+    "timestamp": 1747881617201
   },
   "references/eClassifiers/Criterion/inheritance.html": {
     "path": "Criterion/Inheritance",
-    "link-uuid": "2071cdd4-cddb-40ac-a829-0393b940b825",
+    "link-uuid": "731f01e8-0101-49fa-93b5-ea9dedd6c289",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1747602574383
+    "timestamp": 1747881617192
   },
   "references/eClassifiers/Criterion/references/eStructuralFeatures/inheritExpertWeights/index.html": {
     "path": "Criterion/Attributes/inheritExpertWeights",
-    "link-uuid": "68c7a879-973c-4159-bcf2-ef484e34d655",
+    "link-uuid": "336b2b7a-3050-4d77-bd71-68170690a4e5",
     "title": "inheritExpertWeights",
     "content": "Type EBoolean Multiplicity 0..1 If true, expert weights computed from judgments are multiplied by expert weights inherited from the container. If false, expert weights in the container are not taken into account.",
-    "timestamp": 1747602574389
+    "timestamp": 1747881617198
   },
   "references/eClassifiers/ExpertGroup/inheritance.html": {
     "path": "ExpertGroup/Inheritance",
-    "link-uuid": "cff8ab0e-2429-40c2-9484-21d4ead98e2c",
+    "link-uuid": "a27b34a2-1c96-42c3-916b-a38d9f5d8243",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1747602574441
+    "timestamp": 1747881617250
   }
 }
