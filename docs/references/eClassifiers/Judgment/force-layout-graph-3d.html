@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="EN">
   <head>
-    <title>Default Graph</title>
+    <title>Force Graph 3D</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css" id="nsd-bootstrap-theme-stylesheet"/>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
@@ -87,11 +87,14 @@ window.nsdJsTreeSearchCallback = function(str, node) {
  
 </head>
   <body>
-    <div tabindex="-1" id="nsd_bs" class="modal">
+    <div tabindex="-1" id="nsd_l4" class="modal">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-body">Hover mouse over nodes elements to display tooltips.
 Double-click on nodes to navigate go documentation.
+Left click - rotate.
+Mouse wheel - zoom.
+Right click - pan.
 Drag to rearrange.
 </div>
         </div>
@@ -117,9 +120,9 @@ Drag to rearrange.
           <ul class="navbar navbar-light navbar-expand-lg">
             <a href="../../../index.html" data-nsd-label-uuid="912cbd1b-77ef-4c56-93ae-2392471907fc" class="navbar-brand">
               <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EPackage.gif" class="nsd-app-label-icon"/>Multi-criteria Decision Analysis</a>
-            <button type="button" data-toggle="collapse" data-target="#nsd_bk" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span>
+            <button type="button" data-toggle="collapse" data-target="#nsd_kw" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span>
             </button>
-            <div id="nsd_bk" class="collapse navbar-collapse">
+            <div id="nsd_kw" class="collapse navbar-collapse">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                   <a href="../../../classifiers.html" data-nsd-label-uuid="aedf0cf3-afda-4ba3-9aa1-8e6a54220a93" class="nav-link">Classifiers</a>
@@ -170,7 +173,7 @@ Drag to rearrange.
               <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>Judgment</a>
           </div>
         </div>
-        <div data-nsd-label-uuid="497640eb-d2e3-4754-b383-5162f178abec" data-nsd-action-uris="uuid:497640eb-d2e3-4754-b383-5162f178abec" class="col nsd-app-content-panel">
+        <div data-nsd-label-uuid="94a43d17-8715-4d52-b5ea-e24b55097dce" data-nsd-action-uris="uuid:94a43d17-8715-4d52-b5ea-e24b55097dce" class="col nsd-app-content-panel">
           <div class="container-fluid">
             <div class="row nsd-app-content-panel-breadcrumb-row">
               <div class="col">
@@ -182,7 +185,7 @@ Drag to rearrange.
                     </li>
                     <li class="breadcrumb-item"><span data-nsd-label-uuid="4c837fe7-9603-47f4-9bdd-38075d352a3b"><img src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png" class="nsd-app-label-icon"/>Graphs</span>
                     </li>
-                    <li class="breadcrumb-item active"><span data-nsd-label-uuid="497640eb-d2e3-4754-b383-5162f178abec">Default Graph</span>
+                    <li class="breadcrumb-item active"><span data-nsd-label-uuid="94a43d17-8715-4d52-b5ea-e24b55097dce">Force Graph 3D</span>
                     </li>
                   </ol>
                 </nav>
@@ -190,7 +193,7 @@ Drag to rearrange.
             </div>
             <div class="row nsd-app-content-panel-title-and-items-row">
               <div class="col-auto">
-                <H1><span data-nsd-label-uuid="497640eb-d2e3-4754-b383-5162f178abec" class="nsd-app-content-panel-title">Default Graph<a data-toggle="modal" data-target="#nsd_bs" href="#" title="A fixed force-layout graph of this classifier and related classifiers showing relationships between them" style="vertical-align:super;font-size:x-small;margin-left:0.2em"><span class="far fa-question-circle nsd-app-label-icon"></span></a></span>
+                <H1><span data-nsd-label-uuid="94a43d17-8715-4d52-b5ea-e24b55097dce" class="nsd-app-content-panel-title">Force Graph 3D<a data-toggle="modal" data-target="#nsd_l4" href="#" title="A live force-layout graph of package classifiers showing detailed relationships between them" style="vertical-align:super;font-size:x-small;margin-left:0.2em"><span class="far fa-question-circle nsd-app-label-icon"></span></a></span>
                 </H1>
               </div>
             </div>
@@ -198,34 +201,293 @@ Drag to rearrange.
               <div class="col">
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="col"><div id="graph-container-25" class="row" style="height:70vh;width:100%">
+                    <div class="col"><div id="force-graph-28" class="row" style="height:70vh;width:100%">
 </div>
-<script type="text/javascript">
-	$(document).ready(function() {
-		var dom = document.getElementById("graph-container-25");
-		var myChart = echarts.init(dom, null, {
-			render: "canvas",
-			useDirtyRect: false
-		});
-		var option = {"legend":{},"series":[{"type":"graph","emphasis":{"focus":"adjacency"},"data":[{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EDataType.gif","id":"EDoubleObject@http://www.eclipse.org/emf/2002/Ecore","name":"EDoubleObject","value":{"externalLink":"https://ecore.models.nasdanika.org/references/eClassifiers/EDoubleObject/index.html"},"x":758.2450235413763,"y":541.1273003389131,"category":0},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"Comparable@ecore://nasdanika.org/models/mcda","name":"Comparable","value":{"externalLink":"../Comparable/index.html"},"x":487.23796035668653,"y":420.9711743545176,"category":1},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EInterface.gif","id":"Documented@ecore://nasdanika.org/core/ncore","name":"Documented","value":{"externalLink":"https://ncore.models.nasdanika.org/references/eClassifiers/Documented/index.html"},"x":763.0059280573964,"y":143.15367671400492,"category":2},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"Criterion@ecore://nasdanika.org/models/mcda","name":"Criterion","value":{"externalLink":"../Criterion/index.html"},"x":443.5356058545432,"y":528.4269844570913,"category":1},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"Expert@ecore://nasdanika.org/models/mcda","name":"Expert","value":{"externalLink":"../Expert/index.html"},"x":429.46705315799323,"y":259.56531827514965,"category":1},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"Evaluation@ecore://nasdanika.org/models/mcda","name":"Evaluation","value":{"externalLink":"../Evaluation/index.html"},"x":361.6783853269152,"y":391.3749287554256,"category":1},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"Judgment@ecore://nasdanika.org/models/mcda","name":"Judgment","value":{"externalLink":""},"x":605.2195081302194,"y":340.75003331089795,"category":1},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"ModelElement@ecore://nasdanika.org/core/ncore","name":"ModelElement","value":{"externalLink":"https://ncore.models.nasdanika.org/references/eClassifiers/ModelElement/index.html"},"x":853.6566781873667,"y":342.18297599297364,"category":2},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"ExpertGroup@ecore://nasdanika.org/models/mcda","name":"ExpertGroup","value":{"externalLink":"../ExpertGroup/index.html"},"x":507.0619970613766,"y":125.70864874503212,"category":1}],"symbolSize":20,"roam":true,"layout":"none","links":[{"source":1,"target":3},{"source":1,"target":4},{"source":1,"target":6},{"source":2,"target":6},{"source":3,"target":1},{"source":3,"target":5},{"source":3,"target":6},{"source":4,"target":1},{"source":4,"target":5},{"source":4,"target":6},{"source":4,"target":8},{"source":5,"target":3},{"source":5,"target":4},{"source":5,"target":6},{"source":6,"target":0},{"source":6,"target":1},{"source":6,"target":2},{"source":6,"target":3},{"source":6,"target":4},{"source":6,"target":5},{"source":6,"target":7},{"source":6,"target":8},{"source":7,"target":6},{"source":8,"target":4},{"source":8,"target":6}],"categories":[{"name":"ecore"},{"name":"mcda"},{"name":"ncore"}],"draggable":true,"label":{"show":true,"position":"right"},"lineStyle":{"color":"source","curveness":0}}]};
-		option.tooltip = {};
-		option.series[0].tooltip = {
-			formatter: function(arg) {
-				return arg.value ? arg.value.description : null;
-			}
-		};
-		myChart.setOption(option);
-		myChart.on("dblclick", function(params) {
-			if (params.value) {
-				if (params.value.link) {
-					window.open(params.value.link, "_self");
-				} else if (params.value.externalLink) {
-					window.open(params.value.externalLink);
+<script type="module">
+	import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
+	import SpriteText from "https://cdn.jsdelivr.net/npm/three-spritetext@1.10.0/dist/three-spritetext.mjs";
+
+	        new ForceGraph3D(
+                document.getElementById('force-graph-28'), 
+                {
+                        extraRenderers: [
+                                new CSS2DRenderer()
+                        ]
+                })
+                .graphData({
+          "nodes": [
+            {
+              "image": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EDataType.gif",
+              "name": "EDoubleObject",
+              "id": "EDoubleObject@http://www.eclipse.org/emf/2002/Ecore",
+              "value": [{"externalLink": "https://ecore.models.nasdanika.org/references/eClassifiers/EDoubleObject/index.html"}],
+              "group": "http://www.eclipse.org/emf/2002/Ecore"
+            },
+            {
+              "image": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif",
+              "size": 3,
+              "name": "Comparable",
+              "id": "Comparable@ecore://nasdanika.org/models/mcda",
+              "value": [{"externalLink": "../Comparable/index.html"}],
+              "group": "ecore://nasdanika.org/models/mcda"
+            },
+            {
+              "image": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EInterface.gif",
+              "size": 3,
+              "name": "Documented",
+              "id": "Documented@ecore://nasdanika.org/core/ncore",
+              "value": [{"externalLink": "https://ncore.models.nasdanika.org/references/eClassifiers/Documented/index.html"}],
+              "group": "ecore://nasdanika.org/core/ncore"
+            },
+            {
+              "image": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif",
+              "size": 4,
+              "name": "Criterion",
+              "id": "Criterion@ecore://nasdanika.org/models/mcda",
+              "value": [{"externalLink": "../Criterion/index.html"}],
+              "group": "ecore://nasdanika.org/models/mcda"
+            },
+            {
+              "image": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif",
+              "size": 3,
+              "name": "Expert",
+              "id": "Expert@ecore://nasdanika.org/models/mcda",
+              "value": [{"externalLink": "../Expert/index.html"}],
+              "group": "ecore://nasdanika.org/models/mcda"
+            },
+            {
+              "image": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif",
+              "size": 3,
+              "name": "Evaluation",
+              "id": "Evaluation@ecore://nasdanika.org/models/mcda",
+              "value": [{"externalLink": "../Evaluation/index.html"}],
+              "group": "ecore://nasdanika.org/models/mcda"
+            },
+            {
+              "image": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif",
+              "size": 3,
+              "name": "Judgment",
+              "id": "Judgment@ecore://nasdanika.org/models/mcda",
+              "value": [{"externalLink": ""}],
+              "group": "ecore://nasdanika.org/models/mcda"
+            },
+            {
+              "image": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif",
+              "size": 4,
+              "name": "ModelElement",
+              "id": "ModelElement@ecore://nasdanika.org/core/ncore",
+              "value": [{"externalLink": "https://ncore.models.nasdanika.org/references/eClassifiers/ModelElement/index.html"}],
+              "group": "ecore://nasdanika.org/core/ncore"
+            },
+            {
+              "image": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif",
+              "size": 3,
+              "name": "ExpertGroup",
+              "id": "ExpertGroup@ecore://nasdanika.org/models/mcda",
+              "value": [{"externalLink": "../ExpertGroup/index.html"}],
+              "group": "ecore://nasdanika.org/models/mcda"
+            }
+          ],
+          "links": [
+            {
+              "rotation": 0,
+              "source": "Criterion@ecore://nasdanika.org/models/mcda",
+              "target": "Comparable@ecore://nasdanika.org/models/mcda",
+              "group": "inheritance",
+              "curvature": 0
+            },
+            {
+              "rotation": 0,
+              "source": "Expert@ecore://nasdanika.org/models/mcda",
+              "target": "Comparable@ecore://nasdanika.org/models/mcda",
+              "group": "inheritance",
+              "curvature": 0
+            },
+            {
+              "rotation": 0,
+              "name": "criteria",
+              "source": "Evaluation@ecore://nasdanika.org/models/mcda",
+              "target": "Criterion@ecore://nasdanika.org/models/mcda",
+              "group": "reference",
+              "curvature": 0
+            },
+            {
+              "rotation": 0,
+              "name": "experts",
+              "source": "Evaluation@ecore://nasdanika.org/models/mcda",
+              "target": "Expert@ecore://nasdanika.org/models/mcda",
+              "group": "reference",
+              "curvature": 0
+            },
+            {
+              "rotation": 0,
+              "name": "targets",
+              "source": "Judgment@ecore://nasdanika.org/models/mcda",
+              "target": "Comparable@ecore://nasdanika.org/models/mcda",
+              "group": "reference",
+              "curvature": 0
+            },
+            {
+              "rotation": 0,
+              "source": "Judgment@ecore://nasdanika.org/models/mcda",
+              "target": "Documented@ecore://nasdanika.org/core/ncore",
+              "group": "inheritance",
+              "curvature": 0
+            },
+            {
+              "rotation": 0,
+              "name": "expert",
+              "source": "Judgment@ecore://nasdanika.org/models/mcda",
+              "target": "Expert@ecore://nasdanika.org/models/mcda",
+              "group": "reference",
+              "curvature": 0
+            },
+            {
+              "rotation": 0,
+              "name": "expertJudgments",
+              "source": "Evaluation@ecore://nasdanika.org/models/mcda",
+              "target": "Judgment@ecore://nasdanika.org/models/mcda",
+              "group": "reference",
+              "curvature": 0.2
+            },
+            {
+              "rotation": 3.141592653589793,
+              "name": "criteriaJudgments",
+              "source": "Evaluation@ecore://nasdanika.org/models/mcda",
+              "target": "Judgment@ecore://nasdanika.org/models/mcda",
+              "group": "reference",
+              "curvature": 0.2
+            },
+            {
+              "rotation": 0,
+              "name": "providedJudgments",
+              "source": "Expert@ecore://nasdanika.org/models/mcda",
+              "target": "Judgment@ecore://nasdanika.org/models/mcda",
+              "group": "reference",
+              "curvature": 0
+            },
+            {
+              "rotation": 0,
+              "name": "expertJudgments",
+              "source": "Criterion@ecore://nasdanika.org/models/mcda",
+              "target": "Judgment@ecore://nasdanika.org/models/mcda",
+              "group": "reference",
+              "curvature": 0.2
+            },
+            {
+              "rotation": 2.0943951023931953,
+              "name": "subCriteriaJudgments",
+              "source": "Criterion@ecore://nasdanika.org/models/mcda",
+              "target": "Judgment@ecore://nasdanika.org/models/mcda",
+              "group": "reference",
+              "curvature": 0.2
+            },
+            {
+              "rotation": 4.1887902047863905,
+              "name": "alternativeJudgments",
+              "source": "Criterion@ecore://nasdanika.org/models/mcda",
+              "target": "Judgment@ecore://nasdanika.org/models/mcda",
+              "group": "reference",
+              "curvature": 0.2
+            },
+            {
+              "rotation": 0,
+              "name": "receivedJudgments",
+              "source": "Comparable@ecore://nasdanika.org/models/mcda",
+              "target": "Judgment@ecore://nasdanika.org/models/mcda",
+              "group": "reference",
+              "curvature": 0
+            },
+            {
+              "rotation": 0,
+              "source": "Judgment@ecore://nasdanika.org/models/mcda",
+              "target": "ModelElement@ecore://nasdanika.org/core/ncore",
+              "group": "inheritance",
+              "curvature": 0
+            },
+            {
+              "rotation": 0,
+              "source": "ExpertGroup@ecore://nasdanika.org/models/mcda",
+              "target": "Expert@ecore://nasdanika.org/models/mcda",
+              "group": "inheritance",
+              "curvature": 0.2
+            },
+            {
+              "rotation": 3.141592653589793,
+              "name": "members",
+              "source": "ExpertGroup@ecore://nasdanika.org/models/mcda",
+              "target": "Expert@ecore://nasdanika.org/models/mcda",
+              "group": "reference",
+              "curvature": 0.2
+            },
+            {
+              "rotation": 0,
+              "name": "expertJudgments",
+              "source": "ExpertGroup@ecore://nasdanika.org/models/mcda",
+              "target": "Judgment@ecore://nasdanika.org/models/mcda",
+              "group": "reference",
+              "curvature": 0
+            }
+          ]
+        })
+                .nodeAutoColorBy('group')
+                .nodeVal('size')
+                .linkDirectionalArrowLength(2.5)
+                .linkDirectionalArrowRelPos(1)
+                .linkCurvature('curvature')
+                .linkCurveRotation('rotation')
+                .linkAutoColorBy('group')
+                .onNodeClick((node, event) => {
+       if (node.lastClick) {
+        if (event.timeStamp - node.lastClick < 500) {
+			if (Array.isArray(node.value) && node.value.length > 0) {
+				if (node.value[0].link) {
+					window.open(node.value[0].link, "_self");
+				} else if (node.value[0].externalLink) {
+					window.open(node.value[0].externalLink);
 				}
 			}
-		});
-		window.addEventListener("resize", myChart.resize);
-	});
+			delete node.lastClick;
+		} else {
+			node.lastClick = event.timeStamp;
+		}
+	} else {
+		node.lastClick = event.timeStamp;
+	}
+   })
+                .nodeThreeObject(node => {
+        const nodeEl = document.createElement('div');
+        nodeEl.textContent = node.name;
+        nodeEl.style.color = node.color;
+        nodeEl.className = 'node-label';
+        return new CSS2DObject(nodeEl);
+      })
+                .nodeThreeObjectExtend(true)
+                .linkThreeObject(link => {
+         // extend link with text sprite
+         if (link.name && !link.curvature) {
+           const sprite = new SpriteText(link.name);
+           sprite.color = 'lightgrey';
+           sprite.textHeight = 1.5;
+           return sprite;
+         }
+       })
+                .linkPositionUpdate((sprite, { start, end }) => {
+		if (sprite) {
+          const pos = Object.assign(...['x', 'y', 'z'].map(c => ({
+            [c]: start[c] + (end[c] - start[c]) / 1.3
+          })));
+
+          // Position sprite
+          Object.assign(sprite.position, pos);
+        }
+       })
+                .linkThreeObjectExtend(true)
+                .onNodeDragEnd(node => {
+          node.fx = node.x;
+          node.fy = node.y;
+          node.fz = node.z;
+        })
 </script>
 </div>
                   </div>
